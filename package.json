@@ -1,9 +1,9 @@
 {
-  "name": "ischemaview-cordova-plugin-background-mode",
+  "name": "datazen-cordova-plugin-background-mode",
   "version": "0.9.1",
   "description": "Prevent apps from going to sleep in background.",
   "cordova": {
-    "id": "ischemaview-cordova-plugin-background-mode",
+    "id": "datazen-cordova-plugin-background-mode",
     "platforms": [
       "ios",
       "android",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-background-mode.git"
+    "url": "git+https://github.com/datazen/cordova-plugin-background-mode.git"
   },
   "scripts": {
     "version": "node scripts/update-version.js"
@@ -35,12 +35,12 @@
       "version": ">=16"
     }
   ],
-  "author": "Sebastián Katzer",
+  "author": "Sebastián Katzer, Scott Logsdon",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-background-mode/issues"
+    "url": "https://github.com/datazen/cordova-plugin-background-mode/issues"
   },
-  "homepage": "https://github.com/katzer/cordova-plugin-background-mode#readme",
+  "homepage": "https://github.com/datazen/cordova-plugin-background-mode#readme",
   "publishConfig": {
     "registry": "https://nexus.infrastructure.rapid-sys.com/repository/npm-internal"
   }
