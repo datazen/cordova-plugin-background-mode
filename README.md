@@ -178,6 +178,21 @@ cordova.plugins.backgroundMode.on('activate', function() {
 });
 ```
 
+### Battery optimizations
+Disables battery optimizations for the app.
+
+```js
+cordova.plugins.backgroundMode.disableBatteryOptimizations();
+```
+
+Checks if battery optimizations is disabled for the app.
+
+```js
+cordova.plugins.backgroundMode.isBatteryOptimizationsDisabled(function(bool) {
+    ...
+});
+```
+
 __Note:__ Calling the method led to increased resource and power consumption.
 
 

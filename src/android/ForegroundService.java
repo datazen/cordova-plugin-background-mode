@@ -67,6 +67,8 @@ public class ForegroundService extends Service {
     // Partial wake lock to prevent the app from going to sleep when locked
     private PowerManager.WakeLock wakeLock;
 
+    private static int FLAG_MUTABLE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_MUTABLE : 0;
+
     /**
      * Allow clients to call on to the service.
      */
@@ -177,11 +179,11 @@ public class ForegroundService extends Service {
         // The user-visible name of the channel.
         CharSequence name = "cordova-plugin-background-mode";
         // The user-visible description of the channel.
-        String description = "cordova-plugin-background-mode notification";
+        String description = "cordova-plugin-background-moden notification";
 
-        int importance = NotificationManager.IMPORTANCE_HIGH;
+        int importance = NotificationManager.IMPORTANCE_LOW;
 
-        NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID, name,importance);
 
         // Configure the notification channel.
         mChannel.setDescription(description);
@@ -222,7 +224,7 @@ public class ForegroundService extends Service {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             PendingIntent contentIntent = PendingIntent.getActivity(
                     context, NOTIFICATION_ID, intent,
-                    PendingIntent.FLAG_MUTABLE);
+                    PendingIntent.FLAG_UPDATE_CURRENT | FLAG_MUTABLE);
 
 
             notification.setContentIntent(contentIntent);
