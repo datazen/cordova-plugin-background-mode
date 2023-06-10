@@ -1,5 +1,9 @@
 ## ChangeLog
 
+#### Version 0.7.5 (06.10.2023)
+- Changed FLAG_IMMUTABLE to FLAG_MUTABLE
+- Updated notification importance to HIGH
+
 #### Version 0.7.4 (06.09.2023)
 - Added FLAG_IMMUTABLE to PendingIntent for Android 13+ compatibility
 
