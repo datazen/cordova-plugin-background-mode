@@ -35,7 +35,7 @@
       "version": ">=16"
     }
   ],
-  "author": "Sebastián Katzer, Scott Logsdon",
+  "author": "Sebastián Katzer, iSchemaView, Scott Logsdon",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/datazen/cordova-plugin-background-mode/issues"

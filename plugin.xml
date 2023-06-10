@@ -15,7 +15,7 @@
 
     <license>Apache 2.0</license>
 
-    <author>Sebastián Katzer, Scott Logsdon</author>
+    <author>Sebastián Katzer, iSchemaView, Scott Logsdon</author>
 
     <!-- dependencies -->
     <dependency id="cordova-plugin-device" />
