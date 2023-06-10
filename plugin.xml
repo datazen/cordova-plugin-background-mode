@@ -2,8 +2,8 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="datazen-cordova-plugin-background-mode"
-        version="0.9.1">
+        id="cordova-plugin-background-mode"
+        version="0.8.0">
 
     <name>BackgroundMode</name>
 

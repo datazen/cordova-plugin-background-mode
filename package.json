@@ -1,9 +1,9 @@
 {
-  "name": "datazen-cordova-plugin-background-mode",
-  "version": "0.9.1",
+  "name": "cordova-plugin-background-mode",
+  "version": "0.8.0",
   "description": "Prevent apps from going to sleep in background.",
   "cordova": {
-    "id": "datazen-cordova-plugin-background-mode",
+    "id": "cordova-plugin-background-mode",
     "platforms": [
       "ios",
       "android",

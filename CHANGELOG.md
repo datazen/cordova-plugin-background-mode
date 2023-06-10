@@ -1,5 +1,8 @@
 ## ChangeLog
 
+#### Version 0.8.0 (06.09.2023)
+- Updated Pendingintent to support Android 13
+
 #### Version 0.7.3 (07.08.2019)
 This is more a "just publish all changes after long time" release.
 - [___change___:] Removed code for Windows 10 Mobile
