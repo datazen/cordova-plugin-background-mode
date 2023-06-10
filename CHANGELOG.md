@@ -1,5 +1,8 @@
 ## ChangeLog
 
+#### Version 0.7.3 (06.09.2023)
+- Added FLAG_IMMUTABLE to PendingIntent for Android 13+ compatibility
+
 #### Version 0.7.3 (07.08.2019)
 This is more a "just publish all changes after long time" release.
 - [___change___:] Removed code for Windows 10 Mobile
