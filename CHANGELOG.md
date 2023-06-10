@@ -1,6 +1,6 @@
 ## ChangeLog
 
-#### Version 0.7.3 (06.09.2023)
+#### Version 0.7.4 (06.09.2023)
 - Added FLAG_IMMUTABLE to PendingIntent for Android 13+ compatibility
 
 #### Version 0.7.3 (07.08.2019)
