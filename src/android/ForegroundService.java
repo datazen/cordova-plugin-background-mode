@@ -35,6 +35,7 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.app.NotificationChannel;
+import java.lang.reflect.Field;
 
 import org.json.JSONObject;
 
@@ -68,7 +69,18 @@ public class ForegroundService extends Service {
     private PowerManager.WakeLock wakeLock;
 
     // private static int FLAG_MUTABLE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_MUTABLE : 0;
-    private static int FLAG_MUTABLE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0;
+    private static int getFlagMutable() {
+    try {
+        if (Build.VERSION.SDK_INT >= 31) { // 31 is Android 12 (S)
+            Field field = PendingIntent.class.getDeclaredField("FLAG_MUTABLE");
+            return field.getInt(null);
+        }
+    } catch (Exception e) {
+        // Log or handle the error if necessary
+    }
+    return 0; // Default to 0 if FLAG_MUTABLE is not available
+}
+private static int FLAG_MUTABLE = getFlagMutable();
 
     /**
      * Allow clients to call on to the service.
